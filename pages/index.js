@@ -2,7 +2,13 @@ import { useState } from 'react';
 import Head from 'next/head';
 
 export default function Home() {
-  const [vin, setVin] = useState('');
+ <input
+  type="text"
+  value={vin} onChange={(e) => setVin(e.target.value)}
+  placeholder="Enter VIN here"
+  maxLength="17"
+  style={{ padding: '10px', fontSize: '16px', width: '300px' }}
+/>
   const [result, setResult] = useState('');
 
   const handleVinCheck = () => {
