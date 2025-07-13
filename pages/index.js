@@ -6,7 +6,6 @@ export default function Home() {
   const [result, setResult] = useState('');
 
   const handleVinCheck = () => {
-    // Placeholder logic (real API will come later)
     if (vin.length === 17) {
       setResult(`✅ VIN ${vin} found. Example issues: Lifter tick, faulty O2 sensor, pending recall on airbags.`);
     } else {
@@ -28,17 +27,17 @@ export default function Home() {
         <input
           type="text"
           placeholder="Enter VIN here"
-          maxLength="17"
           value={vin}
           onChange={(e) => setVin(e.target.value)}
+          maxLength="17"
           style={{ padding: '10px', fontSize: '16px', width: '300px' }}
         />
 
         <br /><br />
 
         <button
-          style={{ padding: '10px 20px', fontSize: '16px' }}
           onClick={handleVinCheck}
+          style={{ padding: '10px 20px', fontSize: '16px' }}
         >
           Check VIN
         </button>
