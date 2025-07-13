@@ -14,7 +14,16 @@ export default function Home() {
   };
 
   return (
-    <div className="container">
+   <div
+  className="container"
+  style={{
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: '2rem',
+    fontFamily: 'Arial, sans-serif'
+  }}
+>
       <Head>
         <title>VinFix411</title>
         <link rel="icon" href="/favicon.ico" />
