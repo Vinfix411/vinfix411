@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to VINFix411" />
+        <Header title="Welcome to VinFix411" />
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
